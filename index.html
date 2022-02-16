@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Progress</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="mark_progress.css">
+</head>
+<body>
+<div id="myProgress">
+<div id="myBar">0%</div>
+</div>
+<input id="val" value="10" type="hidden">
+<input id="total" value="1" type="hidden">
+<input id="actual" value="0" type="hidden">
+<div class="row">
+    <div class="col-4">
+        <form id="myform">
+            <div class="form-group"><label>Nombre</label><input class="form-control mark_progress" type="text" name="nombre"></div>
+            <div class="form-group"><label>Apellido</label><input class="form-control mark_progress" type="text" name="apellido"></div>
+            <div class="form-group"><label>Identificación</label><input class="form-control mark_progress" type="text" name="identificacion"></div>
+            <div class="form-group"><label>Departamento</label><input class="form-control mark_progress" type="text" name="departamento"></div>
+            <div class="form-group"><label>Ciudad</label><input class="form-control mark_progress" type="text" name="ciudad"></div>
+            <div class="form-group"><label>Barrio</label><input class="form-control mark_progress" type="text" name="barrio"></div>
+            <div class="form-group"><label>Dirección</label><input class="form-control mark_progress" type="text" name="direccion"></div>
+            <div class="form-group"><label>Teléfono</label><input class="form-control mark_progress" type="tel" name="telefono"></div>
+            <div class="form-group"><label>Email</label><input class="form-control mark_progress" type="email" name="email"></div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="mark_progress.js"></script>
+<script>
+    mark_progress('myform');
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>
